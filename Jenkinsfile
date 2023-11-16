@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage("test") {
             steps {
-                docker run piotrnawrocki/docker-react npm run test -- --coverage
+                sh 'docker run piotrnawrocki/docker-react npm run test -- --coverage'
             }
         }
     }
