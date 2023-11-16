@@ -1,8 +1,8 @@
 pipeline {
     agent { 
         dockerfile {
+            true
             filename 'Dockerfile.dev'
-            label 'piotrnawrocki/docker-react'
         }
      }
     stages {
