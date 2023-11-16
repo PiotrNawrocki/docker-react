@@ -1,5 +1,4 @@
 pipeline {
-    environment{ PATH = "/usr/local/bin:$PATH" }
     agent { 
         dockerfile {
             filename 'Dockerfile.dev'
